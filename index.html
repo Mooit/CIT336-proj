@@ -1,44 +1,48 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="main.css">
-    </head> 
+<head>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="lightbox.css"> 
+</head> 
     
     <body>
-        
         <h1>Matthew's Website</h1>
-        
         <div id="menu">
             <ul style="list-style-type:none">
                 <li><a href="C:/Users/Matthew/Projects/CIT336/career.html">Career Aspirations</a></li>
                 <li><a href="C:/Users/Matthew/Projects/CIT336/hobbies.html">My Hobbies</a></li>
+                 <li><a href="C:/Users/Matthew/Projects/CIT336/gallery.html">Gallery</a></li>
             </ul>
         </div>
         
-        <h3>A bit about myself</h3>
-       
-        <p>
-            My name is Matthew, I'm a full time student from Australia and I'm currently on exchange for a semester. Back in Sydney I'm working towards a Bachelor's degree in Business and Information Technology at the University of Technology, Sydney, majoring in Finance and Networking Engineering. I'm currently in the third year of my four year degree.
-            <img src="Sydney.JPG" alt="picture of Sydney">
-        </p>
-    
-        <h3>My time in New York so far</h3>
+        <div class="main">
+            <h3>A bit about myself</h3>
+            <p>
+                <a href="image/Sydney.JPG" data-lightbox="Sydney.JPG" data-title="Sydney Harbour"><img class="pictures" img src="Sydney-thumb.JPG" alt="sydney harbour"</a></a>
+                My name is Matthew, I'm a full time student from Sydney, Australia and I'm currently on exchange for a semester. Back in Sydney I'm working towards my Bachelor's degree in Business and Information Technology at the University of Technology, Sydney, majoring in Finance and Networking Engineering. I chose this subject as I am quite interested in learning JavaScript and refining my knowledge in HTML and CSS. I'm currently in the third year of my four year degree. 
+            </p>
+
+            <br>
         
-        <p>
-            This is my first time in the New York and the United States so I have quite a few places I want to visit. However, I have had to adjust to living here so I haven't really had the chance to explore the city. So far the places I've visited in the city are Battery Park, One World Trade Centre and Wall St.
-                <br>
-            I have things I want to do and see in the United States before I head back to Australia though. These are:
-            
-           
-        <div id="list">
-            <ul>
-                <li>See the city from the Rockefeller Centre</li>
-                <li>Visit Central Park</li>
-                <li>Visit Times Square</li>
-                <li>Visit Niagara Falls</li>
-                <li>Watch a New York Knicks game in Madison Square Garden</li>    
-            </ul>
+            <h3>My time in New York so far</h3>
+                
+            <p>
+                This is my first time in the New York and the United States so I have quite a few places I want to visit. However, I have had to adjust to living here so I haven't really had the chance to explore the city. So far the places I've visited in the city are Battery Park, Rockefeller Centre and Times Square. Feel free to look at the gallery page.
+                I have things I want to do and see in the United States before I head back to Australia though. These are:
+            <div id="list">
+                <ul>
+                    <li>See the city from the Rockefeller Centre</li>
+                    <li>Visit Central Park</li>
+                    <li>Visit Times Square</li>
+                    <li>Visit Niagara Falls</li>
+                    <li>Watch a New York Knicks game in Madison Square Garden</li>    
+                </ul>
+            </div>
+            </p>
+        <p id = "time"></p>
         </div>
-        
-        </p>
-    </body>
+<script src="lightbox-plus-jquery.js"></script>
+<script>
+    document.getElementById("time").innerHTML = Date();
+</script>
+</body>
 </html>

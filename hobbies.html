@@ -1,32 +1,52 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="main.css">
-    </head> 
-     <body>
-         <h1>Matthew's Website</h1>
-         <div id="menu">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="lightbox.css"> 
+</head> 
+     
+    <body>
+        <h1>Matthew's Website</h1>
+        <div id="menu">
             <ul style="list-style-type:none">
                 <li><a href="C:/Users/Matthew/Projects/CIT336/index.html">Home Page</a></li>
                 <li><a href="C:/Users/Matthew/Projects/CIT336/career.html">Career Aspirations</a></li>
+                <li><a href="C:/Users/Matthew/Projects/CIT336/gallery.html">Gallery</a></li>  
             </ul>
-        </div>
+        </div> 
          
+    <div class="main">
         <h3>Some hobbies and interests of mine</h3>
         <h4>Sports</h4>
-         <p>
+        <p>
              Two of the main sports I play and follow are basketball and badminton. Back in Australia I play social basketball with my friends, I also follow NBA basketball as I have a lot of spare time. As for badminton, I've played since I was young and I used to participate in competitions. Nowadays I play badminton socially and to represent my university back in Sydney.
-        </p>    
+        </p>
+        
         <h4>Music</h4>
-         <p>
+        <p>
             In Sydney I love going to concerts and dance events. While I listen to variety of genres of music, I listen to trance and hardstyle in particular which is quite popular in Australia. Some of my favourite artists are Code Black, Wasted Penguinz, Gareth Emery and Dash Berlin. 
             <br>
             <a href="https://www.youtube.com/watch?v=cArtun35Iyc">Here is a link for "We Were Young" by Gareth Emery</a>
-        </p>    
-        <h4>Outdoors</h4>
-         <p>
-            In Sydney I love to hike, there are many nice trails and national parks within 30 minutes of the city central. Australia is also famous for its beaches and there are some really beautiful ones close to where I live.
-            <br>
-            <img src="beach.JPG" alt="pic of sydney beach">
         </p>
-    </body>
+        
+        <h4>Outdoors</h4>
+        <p>
+            In Sydney I love to hike, there are many nice trails and national parks within 30 minutes of the city central. Australia is also famous for its beaches and there are some really beautiful ones close to where I live. 
+            <br>
+        </p>
+        
+        <p>
+            <a href="image/Beach.JPG" data-lightbox="Beach.JPG" data-title="Small Sydney Beach "><img class="pictures" img src="Beach-thumb.JPG" alt="Small Sydney Beach"></a></a>
+        <br>
+        <br>
+        <br>
+            Click to Englarge
+        </p>
+    </div>
+
+<p id = "time"></p>
+</body>
+<script src="lightbox-plus-jquery.js"></script>
+<script>
+    document.getElementById("time").innerHTML = Date();
+</script>
 </html>

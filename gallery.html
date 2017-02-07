@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="lightbox.css">  
+        <script src="lightbox-plus-jquery.js"></script>
+
+    </head>
+    <body>
+         <h1>Matthew's Website</h1>
+         <div id="menu">
+            <ul style="list-style-type:none">
+                <li><a href="C:/Users/Matthew/Projects/CIT336/index.html">Main Page</a></li>
+                <li><a href="C:/Users/Matthew/Projects/CIT336/hobbies.html">My Hobbies</a></li>
+                 <li><a href="C:/Users/Matthew/Projects/CIT336/gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+        <p>
+            Content
+        </p>
+        <p id = "time"></p>
+        <button id = "hide"> Click to hide the date!</button>
+        </div>
+    </body>
+    <script> document.getElementById("time").innerHTML = Date(); </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script> $(document).ready(function(){
+            $("#hide").click(function(){
+        $("getElementById("time")).hide);
+        });
+        });
+    </script>
+</html>

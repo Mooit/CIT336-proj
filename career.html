@@ -1,23 +1,29 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="lightbox.css"> 
     </head>
     <body>
-        
          <h1>Matthew's Website</h1>
-        
          <div id="menu">
             <ul style="list-style-type:none">
                 <li><a href="C:/Users/Matthew/Projects/CIT336/index.html">Main Page</a></li>
                 <li><a href="C:/Users/Matthew/Projects/CIT336/hobbies.html">My Hobbies</a></li>
+                 <li><a href="C:/Users/Matthew/Projects/CIT336/gallery.html">Gallery</a></li>
             </ul>
         </div>
-         
-        <h3>Professional Interests</h3>    
         
+        <div class="main">
+        <h3>Professional Interests</h3>    
          <p>
             Although I have not really settled on what kind of career I want to pursue I do have some interests and roles I would like to explore and learn more about. Software development has always been a interest of mine although I admit I am not great at it, at the moment I am taking a programming class to strengthen my java skills. Networking and cyber security is also another career path that I have considered, I find it quite interesting and I believe that with the way technology is advancing this will be a very interesting field in the future. 
         </p>
+            <p id = "time"></p>
+        </div>
         
     </body>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script>
+        document.getElementById("time").innerHTML = Date();
+    </script>
 </html>

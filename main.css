@@ -1,18 +1,18 @@
+
 body {
     background-color: aliceblue;
-    margin: 20px;
     line-height: 26px;
-    padding: 0px 200px 0px 200px;
+   
 }
 
 h1{
     font-family:"Arial";
-    text-align: center;
+    text-align:center;
 }
 
 h3{
     font-family:"Arial";
-    text-align: center;
+    text-align:center;
     font-size: 22px;
 }
 
@@ -24,29 +24,48 @@ h4{
 p {
     font-family:"Arial";
     padding: 0px;
-    text-align: center;
+    text-align:left;
+}
+
+.main {
+    width:750px;
+	height:auto;
+	display:block;
+	margin:0 auto;
+	text-align:justify;
+	padding:10px;
+}
+
+.pictures {
+    border: 2px;
+    border-color: transparent;
+    border-radius: 5px; 
+    float:left;
+    margin: 25px;
 }
 
 #menu {
+	width:750px;
 	height:26px;
 	margin:0 auto;
 	display:inline;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
 }
 
 #menu ul {
 	margin:0 auto;
 	padding:10px;
+	width: 750px;
+	display:block;
 	text-align:center;
 }
 
 #menu ul li {
-    list-style:none;
+	list-style:none;
 	display:inline-block;
-    padding: 5px 100px 5px 100px;
-    font-family: Arial;
-    font-size: 20px;
+	float:none;
+	padding:10px 62px;
+	font-family:"Arial";  
+	font-size:20px;
 }
 
 #menu a:hover {
