@@ -20,15 +20,19 @@
             Content
         </p>
         <p id = "time"></p>
+            
         <button id = "hide"> Click to hide the date!</button>
+        
         </div>
     </body>
     <script> document.getElementById("time").innerHTML = Date(); </script>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-- uses a CDN to load jquery library -->
+    
     <script> $(document).ready(function(){
             $("#hide").click(function(){
-        $("getElementById("time")).hide);
+        $(document.getElementById("time")).hide();
         });
         });
-    </script>
+    </script>  <!-- this script uses jQuery to hide the paragraph with the time id --> 
 </html>
